@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #F27D26; /* Dynamic Bold Orange */
+  --color-brand-secondary: #ffffff; /* White high contrast */
+  --color-bg-dark: #050505;
+  --color-bg-panel: #111111;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+}
+
+/* Custom Scrollbar matching the Bold Typography Theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F27D26;
+}
+
+/* Accent glassmorphism & Bold Containers */
+.glass-panel {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: #141414;
+  border-color: #F27D26;
+  box-shadow: 0 15px 30px -10px rgba(242, 125, 38, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Timeline vertical line */
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 2px;
+  background: linear-gradient(to bottom, #F27D26, rgba(255, 255, 255, 0.1), transparent);
+}
+
+@media (min-width: 768px) {
+  .timeline-line::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
