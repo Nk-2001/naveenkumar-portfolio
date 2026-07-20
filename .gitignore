@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# production build
+dist
+
+# vercel
+.vercel
+
+# logs
+*.log
+
+# environment variables
+.env
+.env.local
+.env.production
+
+# editor
+.vscode
