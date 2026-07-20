@@ -31,7 +31,7 @@ export default function Projects() {
       description: "Designed and developed a highly polished, responsive personal portfolio showcasing developer expertise, built with modular React components, smooth scroll reveals, and a custom interactive administrative mailbox.",
       tags: ["React.js", "Vite", "TypeScript", "Tailwind CSS", "motion"],
       githubUrl: "https://github.com/Nk-2001",
-      liveUrl: "https://naveenkumar-portfolio.vercel.app/",
+      liveUrl: "https://naveenkumar-portfolio-pink.vercel.app/",
       status: "Production",
       bullets: [
         "Crafted a custom dark-industrial aesthetic using space-optimized typography and high-contrast accents.",
