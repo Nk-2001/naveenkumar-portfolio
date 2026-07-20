@@ -193,7 +193,7 @@ export default function Hero() {
                 </div>
                 <div className="pl-4">
                   <span className="text-slate-500">experience:</span>{" "}
-                  <span className="text-white">"Subiksham Software Solutions"</span>,
+                  <span className="text-white">"IDM Techpark"</span>,
                 </div>
                 <div className="pl-4">
                   <span className="text-slate-500">skills:</span> [
