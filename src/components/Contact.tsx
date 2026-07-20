@@ -65,7 +65,7 @@ export default function Contact({ onOpenAdmin, isAdminMode }: ContactProps) {
           name: "Sarah Miller",
           email: "sarah.m@company.org",
           subject: "Hiring: Frontend Engineer",
-          message: "Hi Naveenkumar, your experience at Subiksham Solutions matches an open position we have at our tech agency. Let's schedule a call this week. Here is my email for coordination.",
+          message: "Hi Naveenkumar, your experience at IDM Techpark matches an open position we have at our tech agency. Let's schedule a call this week. Here is my email for coordination.",
           createdAt: new Date(Date.now() - 3600000 * 24).toISOString(),
           read: true,
         }
@@ -94,7 +94,7 @@ export default function Contact({ onOpenAdmin, isAdminMode }: ContactProps) {
   };
 
   return (
-    <section id="contact" className="py-32 bg-[#050505] text-white relative border-t border-white/10">
+    <section id="contact" className="py-32 bg-[#050505] text-white relative border-t border-white/10 scroll-mt-24">
       <div className="absolute top-1/4 right-5 w-80 h-80 rounded-full bg-[#F27D26]/[0.02] blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

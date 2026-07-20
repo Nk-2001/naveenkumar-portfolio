@@ -56,7 +56,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] flex flex-col font-sans select-none antialiased selection:bg-[#F27D26]/30 selection:text-[#F27D26]">
+    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] flex flex-col font-sans antialiased selection:bg-[#F27D26]/30 selection:text-[#F27D26]">
       
       {/* Dynamic Background Grid Pattern in theme colors */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:5rem_5rem] pointer-events-none z-0 opacity-60" />

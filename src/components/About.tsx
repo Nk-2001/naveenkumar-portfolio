@@ -56,7 +56,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-32 bg-[#050505] border-t border-white/10 text-white relative">
+    <section id="about" className="py-32 bg-[#050505] border-t border-white/10 text-white relative scroll-mt-24">
       <div className="absolute top-1/2 left-5 w-72 h-72 rounded-full bg-[#F27D26]/[0.02] blur-3xl pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -82,7 +82,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-32 bg-[#050505] text-white relative border-t border-white/10">
+    <section id="services" className="py-32 bg-[#050505] text-white relative border-t border-white/10 scroll-mt-24">
       {/* Background Ambience Accent */}
       <div className="absolute top-1/4 right-10 w-80 h-80 rounded-full bg-[#F27D26]/[0.015] blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-10 w-80 h-80 rounded-full bg-white/[0.005] blur-3xl pointer-events-none" />

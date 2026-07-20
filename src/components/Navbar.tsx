@@ -42,6 +42,20 @@ export default function Navbar({ onOpenAdmin, isAdminMode, onEnableAdminMode }: 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+      window.history.pushState(null, "", href);
+    }
+  };
+
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About & Experience", href: "#about" },
@@ -216,13 +230,13 @@ export default function Navbar({ onOpenAdmin, isAdminMode, onEnableAdminMode }: 
             className="md:hidden bg-[#0a0a0a] border-b border-white/10 overflow-hidden"
             id="nav-mobile-menu"
           >
-            <div className="px-4 pt-2 pb-6 space-y-2">
+            <div className="px-4 pt-2 pb-6 space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block px-4 py-3 text-xs uppercase tracking-[0.15em] font-semibold text-slate-300 hover:text-[#F27D26] hover:bg-white/5 transition-colors"
+                  onClick={(e) => handleNavLinkClick(e, link.href)}
+                  className="block px-4 py-4 text-xs uppercase tracking-[0.15em] font-semibold text-slate-300 hover:text-[#F27D26] hover:bg-white/5 transition-colors duration-200"
                 >
                   {link.name}
                 </a>

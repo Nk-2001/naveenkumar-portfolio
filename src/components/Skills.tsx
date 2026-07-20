@@ -96,7 +96,7 @@ export default function Skills() {
       : categories.filter((cat) => cat.id === activeCategory);
 
   return (
-    <section id="skills" className="py-32 bg-[#050505] text-white border-t border-white/10 relative">
+    <section id="skills" className="py-32 bg-[#050505] text-white border-t border-white/10 relative scroll-mt-24">
       <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#F27D26]/[0.02] blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

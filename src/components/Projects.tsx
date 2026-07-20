@@ -31,7 +31,7 @@ export default function Projects() {
       description: "Designed and developed a highly polished, responsive personal portfolio showcasing developer expertise, built with modular React components, smooth scroll reveals, and a custom interactive administrative mailbox.",
       tags: ["React.js", "Vite", "TypeScript", "Tailwind CSS", "motion"],
       githubUrl: "https://github.com/Nk-2001",
-      liveUrl: "https://naveenkumar-portfolio-pink.vercel.app/",
+      liveUrl: "https://naveenkumar-portfolio.vercel.app/",
       status: "Production",
       bullets: [
         "Crafted a custom dark-industrial aesthetic using space-optimized typography and high-contrast accents.",
@@ -105,7 +105,7 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-32 bg-[#050505] text-white relative border-t border-white/10">
+    <section id="projects" className="py-32 bg-[#050505] text-white relative border-t border-white/10 scroll-mt-24">
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-[#F27D26]/[0.01] blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
